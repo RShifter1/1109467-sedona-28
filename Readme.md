@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mark Shervud](https://up.htmlacademy.ru/htmlcss/28/user/1109467).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Гинтер](https://htmlacademy.ru/profile/id781369).
 
 ---
 
