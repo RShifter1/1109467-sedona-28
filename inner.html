@@ -6,115 +6,176 @@
   </head>
   <body>
 
-<header>
-  <nav>
-<ul>
-  <li><a href="info.html">Информация</a></li>
-  <li><a href="gallery.html">Фото и видео</a></li>
-  <li><a href="map.html">Карта штата</a></li>
-  <li><a href="hotels">Гостиницы</a></li>
-</ul>
-<a href="">
-<img src="https://via.placeholder.com/150x100" alt="">
-</a>
-  </nav>
-</header>
+    <header>
+      <nav>
+    <ul>
+      <li><a href="info.html">Информация</a></li>
+      <li><a href="gallery.html">Фото и видео</a></li>
+      <li><a href="map.html">Карта штата</a></li>
+      <li><a href="hotels">Гостиницы</a></li>
+    </ul>
+    <a>
+    <img src="img/filter.jpg" width="138" height="70" alt="лого">
+    </a>
+      </nav>
+    </header>
 
 <main>
   <section>
-    <h1 hidden>Фильтры</h1>
-    <h2>Инфраструктура</h2>
-    <ul>
-      <li>
-        <label>
-      <input type="checkbox"> Бассейн
+    <div>
+    <img src="img/backgroungphoto.jpg" width="1200" height="217" alt="Размытый вид на горы">
+  </div>
+  <form>
+    <h1 hidden>Поиск дома в Седоне</h1>
+    <section>
+      <h2>Инфраструктура</h2>
+      <label>
+      <input type="checkbox"> <img src="img/checkbox-on.svg" width="27" height="23" alt=""> Бассейн
         </label>
-      </li>
-      <li>
         <label>
-      <input type="checkbox"> Парковка
+      <input type="checkbox"> <img src="img/checkbox-off.svg" width="23" height="23" alt=""> Парковка
         </label>
-        <li>
         <label>
-      <input type="checkbox"> WI-FI
+      <input type="checkbox"><img src="img/checkbox-off.svg" width="23" height="23" alt=""> WI-FI
         </label>
-        </ul>
+        </section>
+        <section>
         <h2> Тип жилья</h2>
-        <ul>
-          <li>
         <label>
-      <input type="checkbox"> Гостиница
-        </label><li>
-        <label>
-      <input type="checkbox"> Мотель
-        </label><li>
-        <label>
-      <input type="checkbox"> Апартаменты
+      <input type="checkbox"> <img src="img/checkbox-on.svg" width="27" height="23" alt=""> Гостиница
         </label>
-        </ul>
+        <label>
+      <input type="checkbox"> <img src="img/checkbox-on.svg" width="27" height="23" alt=""> Мотель
+        </label>
+        <label>
+      <input type="checkbox"> <img src="img/checkbox-on.svg" width="27" height="23" alt=""> Апартаменты
+        </label>
+        </section>
+        <section>
+          <h2 hidden> диапазон цены</h2>
         <input type="number"><br>
         <input type="range"><br>
-        <button type="button"> Показать </button>
-      <div>
+        <button type="submit"> Показать </button>
+        </section>
+        </form>
+      <section>
         <h2>Найдено:3</h2>
         <h3>Сортировка:</h3>
         <p><a href="#">По цене</a></p>
         <p><a href="#">По типу</a></p>
         <p><a href="#">По рейтингу</a></p>
-        </div>
+        <div>
+          <img src="img/icon-up-dir.svg" width="11" height="10" alt="">
+          <img src="img/icon-down-dir.svg" width="11" height="10" alt="">
+        </section>
   </section>
+
   <section>
 
     <h3 hidden> Hotels </h3>
-  <div>
-    <img src="https://via.placeholder.com/150x100" alt="">
-    <h3> AMARA RESORT & SPA </h3>
-        <p>Гостиница</p>
-        <p>от 4000 Р.</p>
-        <button type="button">Подробнее </button>
-        <button type="button" disabled>Забронировать </button>
-        <p>Рейтинг: 8.5</p>
-      </td>
-  </tr>
-  <tr>
-    <td> <img src="https://via.placeholder.com/150x100" alt=""></td>
-    <td>
+        <article>
+          <div>
+    <img src="img/amara.jpg" width="135" height="90" alt="гостиница AMARA RESORT & SPA">
+    </div>
+        <div>
+          <h3> AMARA RESORT & SPA </h3>
+        </div>
+          <div>
+            <p>Гостиница</p>
+            <p>от 4000 Р.</p>
+          </div>
+        <div>
+          <a href="#"><button type="submit">Подробнее </button></a>
+          <a href="#"> <button type="submit" disabled>Забронировать </button></a>
+        </div>
+        <div>
+            <img src="img/star.svg" width="19" height="17" alt="">
+            <img src="img/star.svg" width="19" height="17" alt="">
+            <img src="img/star.svg" width="19" height="17" alt="">
+            <img src="img/star.svg" width="19" height="17" alt="">
+        </div>
+          <div>
+          <p>Рейтинг: 8.5</p>
+          </div>
+        </article>
+
+
+        <article>
+          <div>
+     <img src="img/desert.jpg" width="135" height="90" alt="мотель DESERT QUAIL INN">
+     </div>
+     <div>
       <h3> DESERT QUAIL INN</h3>
+      </div>
+      <div>
       <p> Мотель</p>
       <p> от 3000 Р.</p>
-      <button type="button">Подробнее </button>
-      <button type="button" disabled>Забронировать </button>
+      </div>
+      <div>
+      <a href="#"> <button type="submit">Подробнее </button></a>
+      <a href="#"><button type="submit" disabled>Забронировать </button></a>
+      </div>
+      <div>
+          <img src="img/star.svg" width="19" height="17" alt="">
+          <img src="img/star.svg" width="19" height="17" alt="">
+          <img src="img/star.svg" width="19" height="17" alt="">
+      </div>
+      <div>
       <p> Рейтинг: 8.9</p>
-    </td>
-  </tr>
-  <tr>
-    <td> <img src="https://via.placeholder.com/150x100" alt=""></td>
-    <td>
-      <h3>VILLAS AT POCO DIABLO</h3>
-      <p>Апартаменты</p>
-      <p> от 2000 Р.</p>
-      <button type="button">Подробнее </button>
-      <button type="button" disabled>Забронировать </button>
+      </div>
+    </article>
+
+
+    <article>
+      <div>
+        <img src="img/Villas.jpg" width="135" height="90" alt="апартаменты VILLAS AT POCO DIABLO">
+      </div>
+      <div>
+        <h3>VILLAS AT POCO DIABLO</h3>
+      </div>
+      <div>
+        <p>Апартаменты</p>
+        <p> от 2000 Р.</p>
+      </div>
+      <div>
+      <a href="#"><button type="submit">Подробнее </button></a>
+      <a href="#"> <button type="submit" disabled>Забронировать </button></a>
+      </div>
+      <div>
+          <img src="img/star.svg" width="19" height="17" alt="">
+          <img src="img/star.svg" width="19" height="17" alt="">
+      </div>
+      <div>
       <p> Рейтинг: 9.2</p>
-    </td>
-  </tr>
-  </table>
-  </section>
+      </div>
+  </article>
+
 </main>
 
- <div>
+<footer>
+  <div>
+<p> #VISITSEDONA </p>
+<p><a href="tel: +7(495) 666-01-66"> +7(495) 666-01-66</a></p>
+  </div>
+  <div>
     <ul>
-      <li><a href="">Твитер</a></li>
-      <li><a href="">ФБ</a></li>
-      <li><a href="">Ютуб</a></li>
+    <a href="#">
+      <li><img src="img/twitter.svg" width="" height="" alt="Твитер"></li>
+    </a>
+    <a href="#">
+      <li><img src="img/fb-icon.svg" width="" height="" alt="facebook"></li>
+    </a>
+    <a href="#">
+      <li><img src="img/youtube.svg" width="" height="" alt="youtube"></li>
+    </a>
     </ul>
     </div>
-
   <div>
     <p> Website by </p>
-    <a href="https://htmlacademy.ru/study"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
+    <a href="https://htmlacademy.ru/study">
+      <img width="115" height="41" alt="HTML Academy" src="img/logo-htmlacademy.svg">
+    </a>
   </div>
-
 </footer>
   </body>
 </html>
