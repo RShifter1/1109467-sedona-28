@@ -23,41 +23,56 @@
 <main>
   <img src="img/backgroundphoto1.jpg" width="1200" height="217" alt="Размытый вид на горы">
 
-  <section>
-    <div>
-  </div>
-  <form>
+<section>
+  <form action="https://echo.htmlacademy.ru" method="get">
     <h1 hidden>Поиск дома в Седоне</h1>
-    <section>
-      <h2>Инфраструктура</h2>
-      <label>
-      <input type="checkbox"> <img src="img/checkbox-on.svg" width="27" height="23" alt=""> Бассейн
-        </label>
+    <fieldset>
+      <legend>Инфраструктура</legend>
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" name="pool" id="filter-pool" checked >  Бассейн
+          </label>
+        </li>
+        <li>
         <label>
-      <input type="checkbox"> <img src="img/checkbox-off.svg" width="23" height="23" alt=""> Парковка
+          <input type="checkbox" name="parking" id="filter-parking"> Парковка
         </label>
+        </li>
+        <li>
         <label>
-      <input type="checkbox"><img src="img/checkbox-off.svg" width="23" height="23" alt=""> WI-FI
+          <input type="checkbox" name="WI-FI" id="filter-WI-FI"> WI-FI
         </label>
-        </section>
-        <section>
-        <h2> Тип жилья</h2>
+        </li>
+      </ul>
+      </fieldset>
+        <fieldset>
+        <legend> Тип жилья</legend>
+<ul>
+  <li>
         <label>
-      <input type="checkbox"> <img src="img/checkbox-on.svg" width="27" height="23" alt=""> Гостиница
+      <input type="checkbox" name="hotel" id="filter-hotel" checked>Гостиница
         </label>
+      </li>
+      <li>
         <label>
-      <input type="checkbox"> <img src="img/checkbox-on.svg" width="27" height="23" alt=""> Мотель
-        </label>
+      <input type="checkbox" name="motel" id="filter-motel" checked> Мотель
+    </label>
+      </li>
+        <li>
         <label>
-      <input type="checkbox"> <img src="img/checkbox-on.svg" width="27" height="23" alt=""> Апартаменты
+      <input type="checkbox" name="apartment" id="filter-apartment" checked>Апартаменты
         </label>
-        </section>
-        <section>
-          <h2 hidden> диапазон цены</h2>
+      </li>
+    </ul>
+      </fieldset>
+        <fieldset>
+          <legend hidden> диапазон цены</legend>
         <input type="number"><br>
-        <input type="range"><br>
+        <div>
+        </div>
+        </fieldset>
         <button type="submit"> Показать </button>
-        </section>
         </form>
       <section>
         <h2>Найдено:3</h2>
@@ -75,20 +90,18 @@
 
     <h3 hidden> Hotels </h3>
         <article>
-          <div>
     <img src="img/amara.jpg" width="135" height="90" alt="гостиница AMARA RESORT & SPA">
-    </div>
         <div>
           <h3> AMARA RESORT & SPA </h3>
-        </div>
           <div>
             <p>Гостиница</p>
             <p>от 4000 Р.</p>
-          </div>
         <div>
           <a href="#">Подробнее </a>
           <a href="#">Забронировать </a>
         </div>
+      </div>
+    </div>
         <div>
             <img src="img/star.svg" width="19" height="17" alt="">
             <img src="img/star.svg" width="19" height="17" alt="">
@@ -102,20 +115,19 @@
 
 
         <article>
-          <div>
      <img src="img/desert.jpg" width="135" height="90" alt="мотель DESERT QUAIL INN">
-     </div>
      <div>
       <h3> DESERT QUAIL INN</h3>
-      </div>
       <div>
       <p> Мотель</p>
       <p> от 3000 Р.</p>
-      </div>
       <div>
       <a href="#"> Подробнее </a>
       <a href="#">Забронировать </a>
       </div>
+      </div>
+      </div>
+
       <div>
           <img src="img/star.svg" width="19" height="17" alt="">
           <img src="img/star.svg" width="19" height="17" alt="">
@@ -128,19 +140,17 @@
 
 
     <article>
-      <div>
         <img src="img/Villas.jpg" width="135" height="90" alt="апартаменты VILLAS AT POCO DIABLO">
-      </div>
-      <div>
+        <div>
         <h3>VILLAS AT POCO DIABLO</h3>
-      </div>
       <div>
         <p>Апартаменты</p>
         <p> от 2000 Р.</p>
-      </div>
       <div>
       <a href="#">Подробнее </a>
       <a href="#">Забронировать </button></a>
+      </div>
+      </div>
       </div>
       <div>
           <img src="img/star.svg" width="19" height="17" alt="">
@@ -156,7 +166,7 @@
 <footer>
   <div>
 <p> #VISITSEDONA </p>
-<p><a href="tel: +7(495) 666-01-66"> +7(495) 666-01-66</a></p>
+<p><a href="tel: +7(495) 666-01-66"> тел: +7(495) 666-01-66</a></p>
   </div>
   <div>
     <ul>
