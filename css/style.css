@@ -1,0 +1,377 @@
+:root {
+--basic-black: #000000;
+--basic-grey: #333333;
+--basic-blue: #81B3D2;
+--basic-white: #FFFFFF;
+--background-grey: #EEEEEE;
+--basic-brown: #766357;
+--basic-brown-hover: #604E43;
+--push-brown: #503E33;
+--form-chill: #F2F2F2;
+--form-push: #EBEBEB;
+--calendar-chill: #A9A9A9;
+--extra-blue: #669EC0;
+--dark-blue: #5496BD;
+--basic-grey: #BDBBBC;
+}
+
+/* Global */
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-nav {
+  font-size: 14px;
+  line-height: 15px;
+  color: var(--basic-black);
+  background-color: transparent;
+
+  font-weight: 700;
+}
+
+.main-nav-wrapper {
+  background-color: var(--basic-white);
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list a {
+  color: var(--basic-black);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--basic-blue);
+}
+.nav-list a:active{
+  opacity: 30%;
+    color: var(--basic-black);
+}
+
+.nav-list-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+.nav-list-current a {
+  color: var(--basic-brown);
+}
+
+/*image*/
+
+.main-image {
+  background-image: url("../img/backgroundphoto.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/*first-reason*/
+
+.first-reason {
+  background: var(--basic-blue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+/*features*/
+
+.futeres h3 {
+  font-size: 21px;
+  line-height: 25px;
+}
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 25px;
+}
+
+/*second-reason*/
+
+.second-reason {
+  background: var(--basic-blue);
+}
+
+.second-reason h3 {
+  font-size: 21px;
+  line-height: 25px;
+}
+
+/*other reasons*/
+.other-reasons h3 {
+  font-size: 21px;
+  line-height: 25px;
+}
+ .other-reason p {
+   font-size: 14px;
+   line-height: 23px;
+ }
+
+.list-of-reasons {
+  list-style: none;
+}
+
+
+/*form*/
+
+.search-of-hotels h2 {
+  font-size: 30px;
+  line-height: 25px;
+}
+
+.form-wrapper a {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.form-wrapper a:hover,
+.form-wrapper a:focus {
+  background-color: var(--basic-brown-hover);
+  color: var(--basic-white);
+}
+
+.form-wrapper a:active{
+  background-color: var(--push-brown);
+  color: rgba(255,255,255,0.3);
+}
+/*inputs*/
+.date-of-check-out input,
+.date-of-check-in input {
+  background-color: var(--form-chill);
+}
+
+.date-of-check-out input:hover,
+.date-of-check-in input:hover {
+  background-color: var(--form-push);
+}
+.date-of-check-out input:focus,
+.date-of-check-in input:focus {
+  background-color: var(--basic-white);
+}
+
+/*bottons*/
+.date-of-check-out button,
+.date-of-check-in button {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: var(--calendar-chill);
+  width: 21px;
+  height: 22.04px;
+}
+
+.date-of-check-out button:hover,
+.date-of-check-out button:focus,
+.date-of-check-in button:focus,
+.date-of-check-in button:hover {
+  background-color: var(--basic-black);
+}
+
+.date-of-check-out button:active,
+.date-of-check-in button:active {
+  background-color: var(--basic-blue);
+}
+
+button[type="submit"] {
+  background-color: var(--basic-blue);
+   color: var(--basic-white);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: var(--extra-blue);
+  color: var(--basic-white);
+}
+
+button[type="submit"]:active {
+  background-color: var(--dark-blue);
+  color: rgba(255,255,255,0.3);
+}
+
+/* footer*/
+
+.contacts a {
+  background-color: var(--basic-blue);
+  width: 460;
+  height: 480;
+}
+
+.list-of-contacts {
+    list-style: none;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  background-color: var(--extra-blue);
+}
+
+.contacts a:active {
+  background-color: var(--dark-blue);
+}
+
+.developer {
+  color: var(--basic-black);
+}
+
+.developer a:hover,
+.developer a:focus {
+  background-image: url("../img/logo-htmlacademy-blue.png");
+}
+
+.developer a:active {
+  color: var(--basic-grey);
+}
+
+/*inner.html */
+
+.backgroundphoto-filter {
+  background-image: url("../img/backgroundphoto.jpg");
+  filter: blur(5px);
+  width: 1200px;
+  height: 217px;
+}
+
+/*.infrastructure-item-on input [type="checkbox"] {
+  background-image: url("../img/checkbox-on.svg");
+}*/
+
+.list-of-infrastructure {
+  list-style: none;
+}
+
+.founded {
+  font-weight: 700;
+  font-size: 21;
+}
+
+.sorting h3 {
+  font-size: 12;
+  font-weight: 400;
+}
+
+.sorting a {
+  color: var(--basic-grey);
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sorting a:hover,
+.sorting a:focus {
+  color: var(--basic-blue);
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sorting a:active {
+  color: var(--basic-black);
+}
+
+.sorting a:current {
+  color: var(--basic-blue);
+  border-bottom: none;
+}
+
+.sorting button[name="up-dir"] {
+  background-image: url("../img/icon-up-dir.svg");
+  color: var(--basic-grey);
+}
+
+.sorting button[name="down-dir"] {
+  background-image: url("../img/icon-down-dir.svg");
+  color: var(--basic-grey);
+}
+
+.sorting button[name="up-dir"]:hover,
+.sorting button[name="up-dir"]:focus {
+  color: var(--basic-black);
+}
+
+.sorting button[name="up-dir"] button:active {
+  color: var(--basic-blue);
+}
+
+.buttons a:first-child {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.buttons a:first-child:hover,
+.buttons a:first-child:focus {
+  background-color: var(--extra-blue);
+  color: var(--basic-white);
+}
+
+.buttons a:first-child:active {
+  background-color: var(--dark-blue);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.buttons a:last-child {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+}
+
+.buttons a:last-child:hover,
+.buttons a:last-child:focus {
+  background-color: var(--basic-brown-hover);
+  color: var(--basic-white);
+}
+
+.buttons a:last-child:active {
+  background-color: var(--push-brown);
+  color: rgba(255,255,255,0.3);
+}
+
+.first-card h3 {
+  color: var(--basic-black);
+}
+
+.first-card h3:hover,
+.first-card h3:focus {
+  color: var(--basic-blue);
+}
+
+.first-card h3:active {
+  color: rgba(0,0,0,0.3);
+}
