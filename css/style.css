@@ -52,22 +52,62 @@ img {
   height: auto;
 }
 
+/* grid*/
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Main header */
+
+.main-header {
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
 /* Main navigation */
 
-.main-nav {
+
+
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 14px;
   line-height: 15px;
   color: var(--basic-black);
   background-color: transparent;
-
   font-weight: 700;
+
+}
+
+.main-logo {
+  width: 138px;
+  height: 70px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .main-nav-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
   background-color: var(--basic-white);
 }
 
 .nav-list {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
   list-style: none;
 }
 
@@ -92,7 +132,21 @@ img {
   color: var(--basic-brown);
 }
 
-/*image*/
+
+/* Logo */
+.main-image {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+/* container*/
+
+}
+
+.container {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 .main-image {
   background-image: url("../img/backgroundphoto.jpg");
@@ -101,9 +155,16 @@ img {
   background-position: center;
 }
 
+.mask {
+  background-image: url("../img/intro-mask.svg");
+   width: 1200px;
+   height: 272px;
+   background-repeat: no-repeat;
+}
+
 /*first-reason*/
 
-.first-reason {
+.first-reason-describe {
   background: var(--basic-blue);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -112,7 +173,30 @@ img {
 
 /*features*/
 
-.futeres h3 {
+.feature-house-image {
+  background-image: url("../img/icon-1.svg");
+  width: 100px;
+  height: 100px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.feature-food-image {
+  background-image: url("../img/icon-2.svg");
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature-souvenirs-image {
+  background-image: url("../img/icon-3.svg");
+  width: 100px;
+  height: 100px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.feature h3 {
   font-size: 21px;
   line-height: 25px;
 }
@@ -131,7 +215,7 @@ img {
 
 /*second-reason*/
 
-.second-reason {
+.second-reason-describe {
   background: var(--basic-blue);
 }
 
@@ -192,7 +276,7 @@ img {
   background-color: var(--basic-white);
 }
 
-/*bottons*/
+/*buttons*/
 .date-of-check-out button,
 .date-of-check-in button {
   background-image: url("../img/calendar.svg");
@@ -233,7 +317,7 @@ button[type="submit"]:active {
 
 /* footer*/
 
-.contacts a {
+.list-of-contacts a {
   background-color: var(--basic-blue);
   width: 460;
   height: 480;
@@ -243,12 +327,12 @@ button[type="submit"]:active {
     list-style: none;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.list-of-contacts a:hover,
+.list-of-contacts a:focus {
   background-color: var(--extra-blue);
 }
 
-.contacts a:active {
+.list-of-contacts a:active {
   background-color: var(--dark-blue);
 }
 
@@ -331,34 +415,34 @@ button[type="submit"]:active {
   color: var(--basic-blue);
 }
 
-.buttons a:first-child {
+.button-details a {
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 
-.buttons a:first-child:hover,
-.buttons a:first-child:focus {
+.button-details a:hover,
+.button-details a:focus {
   background-color: var(--extra-blue);
   color: var(--basic-white);
 }
 
-.buttons a:first-child:active {
+.button-details a:active {
   background-color: var(--dark-blue);
   color: rgba(255, 255, 255, 0.3);
 }
 
-.buttons a:last-child {
+.button-book a {
   background-color: var(--basic-brown);
   color: var(--basic-white);
 }
 
-.buttons a:last-child:hover,
-.buttons a:last-child:focus {
+.button-book a:hover,
+.button-book a:focus {
   background-color: var(--basic-brown-hover);
   color: var(--basic-white);
 }
 
-.buttons a:last-child:active {
+.button-book a:active {
   background-color: var(--push-brown);
   color: rgba(255,255,255,0.3);
 }

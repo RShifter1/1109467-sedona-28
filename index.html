@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class ="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -11,7 +11,7 @@
   <body class="page-body">
 
 <header class="main-header">
-  <nav class="main-nav">
+  <nav class="main-navigation">
     <div class="main-nav-wrapper">
       <ul class="nav-list">
         <li class="nav-item"><a href="index.html">Информация</a></li>
@@ -19,7 +19,7 @@
         <li class="nav-item"><a href="map.html">Карта штата</a></li>
         <li class="nav-item"><a href="inner.html">Гостиницы</a></li>
       </ul>
-    <div>
+    <div class="main-logo">
       <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны">
     </div>
     </div>
@@ -27,14 +27,14 @@
 </header>
 
 <main class="container">
-  <div class="main-image">
+  <section class="main-image">
     <h1 class="visually-hidden">Баннер</h1>
   <img src="img/intro-welcome.svg" width="457" height="351">
-</div>
-<section class="reasons">
   <div class="mask">
-    <img src="img/intro-mask.svg" width="1200" height="272">
   </div>
+</section>
+<section class="reasons">
+
     <h1> Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон! </p>
 
@@ -49,17 +49,20 @@
       <div class="features">
         <ul class="feature-list">
           <li class=feature-item>
-            <img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+            <div class="feature-house-image">
+            </div>
             <h3>Жилье</h3>
             <p>рекомендуем пожить в настоящем мотеле, все в кино!</p>
           </li>
           <li class="feature-item">
-            <img src="img/icon-2.svg" width="75" height="70" alt="Гамбургер">
+            <div class="feature-food-image">
+            </div>
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы  не разочаруетесь!</p>
           </li>
           <li class="feature-item">
-            <img src="img/icon-3.svg" width="64" height="77" alt="подарочная коробка">
+            <div class="feature-souvenirs-image">
+            </div>
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -107,15 +110,15 @@
       <label>
         Дата заезда
         <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
-        <button type="button" name="date-of-check-in"> </button>
       </label>
+      <button type="button" name="date-of-check-in"> </button>
     </div>
       <div class="date-of-check-out">
       <label>
         Дата выезда
         <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
-        <button type="button" name="date-of-check-out"> </button>
       </label>
+      <button type="button" name="date-of-check-out"> </button>
     </div>
       <div class="adults">
         <label for="number-of-adults"> Взрослые</label>
@@ -157,7 +160,6 @@
 <p> тел: <a href="tel: +7(495) 666-01-66">+7(495) 666-01-66</a></p>
   </div>
 
-  <div class="contacts">
     <ul class="list-of-contacts">
       <li class="contacts-item">
           <a href="#"><img src="img/twitter.svg" width="17" height="17" alt="Твитер"></a>
@@ -169,7 +171,6 @@
           <a href="#"><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a>
         </li>
     </ul>
-    </div>
 
   <div class="from-developer">
     <p> Website by </p>
