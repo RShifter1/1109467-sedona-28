@@ -20,7 +20,7 @@
             <li class="nav-item"><a href="inner.html">Гостиницы</a></li>
           </ul>
         <div>
-          <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны">
+        <a href="index.html"> <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны"></a>
         </div>
         </div>
       </nav>
@@ -31,7 +31,6 @@
 
 <section class="filter-section">
   <div class="backgroundphoto-filter">
-  </div>
   <form action="https://echo.htmlacademy.ru" method="get">
     <h1 class="visually-hidden">Поиск дома в Седоне</h1>
     <fieldset class="first-column">
@@ -81,15 +80,18 @@
         </div>
         </fieldset>
         <button type="submit"> Показать </button>
+      </div>
         </form>
       <section class="sorting-section">
         <p class="founded">Найдено:3</p>
         <div class="sorting">
           <h3>Сортировка:</h3>
+          <div class="sorting-wrapper">
           <a href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По рейтингу</a>
-          <div class="buttons-of-dir"
+        </div>
+          <div class="buttons-of-dir">
           <button type="button" name="up-dir"></button>
         <button type="button" name="down-dir"></button>
           </div>
@@ -102,16 +104,14 @@
         <article class="first-card">
     <img src="img/amara.jpg" width="135" height="90" alt="гостиница AMARA RESORT & SPA">
         <div>
-          <h3> AMARA RESORT & SPA </h3>
+          <h3 class="name-of-the-hotel"> AMARA RESORT & SPA </h3>
           <div>
             <p>Гостиница</p>
             <p>от 4000 Р.</p>
             </div>
-        <div class="button-details">
-          <a  href="#" >Подробнее </a>
-        </div>
-        <div class="button-book">
-          <a  href="#" >Забронировать </a>
+        <div class="buttons">
+          <a class="button-details" href="#" >Подробнее </a>
+          <a class="button-book" href="#" >Забронировать </a>
       </div>
     </div>
         <div class="stars">
@@ -128,16 +128,14 @@
         <article>
      <img src="img/desert.jpg" width="135" height="90" alt="мотель DESERT QUAIL INN">
      <div>
-      <h3> DESERT QUAIL INN</h3>
+      <h3 class="name-of-the-hotel"> DESERT QUAIL INN</h3>
       <div>
       <p> Мотель</p>
       <p> от 3000 Р.</p>
       </div>
-      <div class="button-details">
-      <a href="#"> Подробнее </a>
-    </div>
-    <div class="button-book">
-      <a href="#">Забронировать </a>
+      <div class="buttons">
+      <a class="button-details" href="#"> Подробнее </a>
+      <a class="button-book" href="#">Забронировать </a>
     </div>
       </div>
       <div class="stars">
@@ -153,16 +151,14 @@
     <article>
         <img src="img/Villas.jpg" width="135" height="90" alt="апартаменты VILLAS AT POCO DIABLO">
         <div>
-        <h3>VILLAS AT POCO DIABLO</h3>
+        <h3 class="name-of-the-hotel">VILLAS AT POCO DIABLO</h3>
       <div>
         <p>Апартаменты</p>
         <p> от 2000 Р.</p>
         </div>
-      <div class="button-details">
-      <a href="#" >Подробнее </a>
-    </div>
-    <div class="button-book">
-      <a  href="#" >Забронировать </a>
+      <div class="buttons">
+      <a class="button-details" href="#">Подробнее </a>
+      <a class="button-book" href="#" >Забронировать </a>
       </div>
       </div>
       <div class="stars">
@@ -175,30 +171,34 @@
 </section>
 </main>
 
-<footer>
-  <div>
+<footer class="page-footer">
+
+  <div class="telephone">
 <p> #VISITSEDONA </p>
-<p> тел:<a href="tel: +7(495) 666-01-66">+7(495) 666-01-66</a></p>
+<p> тел: <a href="tel: +7(495) 666-01-66">+7(495) 666-01-66</a></p>
   </div>
-  <div>
-    <ul>
-    <a href="#">
-      <li><img src="img/twitter.svg" width="46" height="48" alt="Твитер"></li>
-    </a>
-    <a href="#">
-      <li><img src="img/fb-icon.svg" width="46" height="48" alt="facebook"></li>
-    </a>
-    <a href="#">
-      <li><img src="img/youtube.svg" width="46" height="48" alt="youtube"></li>
-    </a>
+
+    <ul class="list-of-contacts">
+      <li class="contacts-item">
+          <a href="#"><img src="img/twitter.svg" width="17" height="17" alt="Твитер"></a>
+        </li>
+      <li class="contacts-item">
+          <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook">  </a>
+      </li>
+      <li class="contacts-item">
+          <a href="#"><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a>
+        </li>
     </ul>
-    </div>
-  <div>
+
+  <div class="from-developer">
     <p> Website by </p>
+    <div class="developer">
     <a href="https://htmlacademy.ru/study">
       <img width="115" height="41" alt="HTML Academy" src="img/logo-htmlacademy.svg">
     </a>
   </div>
+  </div>
+
 </footer>
   </body>
 </html>
