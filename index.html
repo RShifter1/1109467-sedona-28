@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class ="page" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -19,9 +19,7 @@
         <li class="nav-item"><a href="map.html">Карта штата</a></li>
         <li class="nav-item"><a href="inner.html">Гостиницы</a></li>
       </ul>
-    <div class="main-logo">
-      <a><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны"></a>
-    </div>
+      <a class="main-logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны"></a>
     </div>
   </nav>
 </header>
@@ -102,20 +100,22 @@
 
       <a href="#">Поиск гостиницы в седоне</a>
       <form action="https://echo.htmlacademy.ru" method="get">
+        <label for="check-in">
+          Дата заезда
+          </label>
     <div class="date-of-check-in">
-      <label>
-        Дата заезда
+
         <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
       <button type="button" name="date-of-check-in"> </button>
-      </label>
     </div>
+    <label for="check-out">
+      Дата выезда
+    </label>
       <div class="date-of-check-out">
-      <label>
-        Дата выезда
         <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
       <button type="button" name="date-of-check-out"> </button>
-      </label>
     </div>
+
       <div class="adults">
         <label for="number-of-adults"> Взрослые</label>
           <div class="minus-and-plus">
@@ -157,7 +157,7 @@
    <div class="container">
 
   <div class="telephone">
-<p> #VISITSEDONA </p>
+<p><a href="#"> #VISITSEDONA </p></a>
  тел: <a href="tel: +7(495) 666-01-66">+7(495) 666-01-66</a>
   </div>
 <div class="footer-social">

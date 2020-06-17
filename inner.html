@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -11,7 +11,7 @@
   <body class="page-body">
 
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-navigation">
         <div class="main-nav-wrapper">
           <ul class="nav-list">
             <li class="nav-item"><a href="index.html">Информация</a></li>
@@ -35,20 +35,21 @@
     <h1 class="visually-hidden">Поиск дома в Седоне</h1>
     <fieldset class="first-column">
       <legend class="">Инфраструктура</legend>
-      <ul class="list-of-infrastructure">
-        <li class="infrastructure-item-on">
-          <label>
-            <input type="checkbox" name="pool" id="filter-pool" checked >  Бассейн
-          </label>
+      <ul>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked >
+          <label for="filter-pool"> Бассейн </label>
         </li>
-        <li class="infrastructure-item">
-        <label>
-          <input type="checkbox" name="parking" id="filter-parking"> Парковка
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
+        <label for="filter-parking">
+          Парковка
         </label>
         </li>
-        <li class="infrastructure-item">
-        <label>
-          <input type="checkbox" name="WI-FI" id="filter-WI-FI"> WI-FI
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="WI-FI" id="filter-WI-FI">
+        <label for="filter-WI-FI">
+          WI-FI
         </label>
         </li>
       </ul>
@@ -103,7 +104,7 @@
     <h3 class="visually-hidden"> Hotels </h3>
         <article class="first-card">
     <img src="img/amara.jpg" width="135" height="90" alt="гостиница AMARA RESORT & SPA">
-        <div>
+
           <h3 class="name-of-the-hotel"> AMARA RESORT & SPA </h3>
           <div>
             <p>Гостиница</p>
@@ -114,13 +115,16 @@
           <a class="button-book" href="#" >Забронировать </a>
       </div>
     </div>
+    <div class="rate">
         <div class="stars">
             <img src="img/star.svg" width="19" height="17" alt="">
             <img src="img/star.svg" width="19" height="17" alt="">
             <img src="img/star.svg" width="19" height="17" alt="">
             <img src="img/star.svg" width="19" height="17" alt="">
+            </div>
             <p>Рейтинг: 8.5</p>
-        </div>
+          </div>
+
 
         </article>
 
