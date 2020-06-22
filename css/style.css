@@ -459,8 +459,8 @@ position: absolute;
   font-weight: bold;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 148px;
-  padding-left: 130px;
+  padding-right: 124px;
+  padding-left: 125px;
   /* outline: 5px solid #fff000; */
   background-color: var(--basic-brown);
 }
@@ -474,18 +474,18 @@ position: absolute;
   background-color: var(--basic-brown);
    padding: 30px 124px 30px 125px;
   padding-top: 30px;
-  padding-bottom: 30px;  */
+  padding-bottom: 30px; */
 
 }
 
 
 .form-wrapper {
-  max-width: 568px;
+  max-width: 583px;
   margin: 0 auto;
   padding: 0 auto;
   min-height: 395px;
   background-color: var(--basic-white);
-  /* outline: 5px solid #fff000; */
+
   top: 0px;
   position: relative;
 }
@@ -493,42 +493,56 @@ position: absolute;
 .first-row {
   display: flex;
   justify-content: flex-start;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding-top: 57px; */
   /* padding-right: 12px; */
-
-  margin-left: 55px;
+/* outline: 5px solid #fff000; */
   /* width: 458px; */
+  /* padding: 0 auto; */
+  padding: 0;
 }
 
 .first-row label {
+  padding-top: 57px;
+  padding-left: 55px;
+  text-align: center;
   margin-right: 12px;
-
-  width: 100px;
-  /* height: 46px; */
-  margin-top: 57px;
+  /* margin-right: 12px;
+  font-weight: bold;
+  margin-top: 37px;
   margin-left: 55px;
   padding-top: 5px;
+  padding-bottom: 0px; */
+  /* outline: 5px solid #fff000; */
+
+
 
 }
 .second-row {
   display: flex;
   justify-content: flex-start;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding-top: 57px; */
   /* padding-right: 12px; */
 
-  margin-left: 55px;
+
   /* width: 458px; */
 }
 .second-row label {
+  /* text-align: center;
   margin-right: 12px;
-
+  font-weight: bold;
   width: 100px;
-  /* height: 46px; */
-  margin-top: 27px;
-  margin-left: 55px;
+  height: 46px;
+  padding-top: 27px;
+  padding-left: 55px;
   padding-top: 5px;
+  outline: 5px solid #fff000; */
+  margin-top: 35px;
+  margin-left: 55px;
+  text-align: center;
+  margin-right: 8px;
+  /* outline: 5px solid #fff000; */
 
 }
 
@@ -616,25 +630,29 @@ float: left;
 
 .date-of-check-in input {
   background-color: var(--form-chill);
-  max-width: 346px;
-  height: 38px;
+  /* max-width: 346px;
+  height: 38px; */
   margin-top: 52px;
-  padding-right: 13px;
+  /* padding-right: 13px; */
   /* padding: 57px 55px; */
-  max-width: 133px;
-  height: 26px;
+  width: 346px;
+  height: 38px;
   border: none;
+  outline: 5px solid #fff000;
+  margin-right: 55px;
+
 }
 .date-of-check-out input {
   background-color: var(--form-chill);
-  max-width: 346px;
-  height: 38px;
+  /* max-width: 346px;
+  height: 38px; */
   margin-top: 27px;
-  padding-right: 13px;
-  /* padding: 57px 55px; */
-  max-width: 133px;
-  height: 26px;
+  /* padding-right: 13px; */
+outline: 5px solid #fff000;
+  width: 346px;
+  height: 38px;
   border: none;
+  margin-right: 30px;
 }
 /* .main-image::before {
   content: "";
@@ -648,7 +666,18 @@ float: left;
 
 } */
 
-.date-of-check-out button::before,
+.date-of-check-out button::before {
+ content: "";
+ background-image: url("../img/calendar.svg");
+   position: absolute;
+   background-repeat: no-repeat;
+     background-position: 0 0;
+   width: 21px;
+   height: 23px;
+   /* right: 0; */
+   right: 50px;
+bottom: 0px;
+}
 .date-of-check-in button::before {
  content: "";
  background-image: url("../img/calendar.svg");
@@ -657,7 +686,8 @@ float: left;
      background-position: 0 0;
    width: 21px;
    height: 23px;
-   right: 15px;
+   /* right: 0; */
+   right: 50px;
 top: 0px;
 }
 
