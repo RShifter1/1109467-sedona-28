@@ -351,7 +351,7 @@ padding-left: 365px;
   grid-template-columns: 2fr 1fr;
   max-width: 1200px;
   min-height: 256px;
-  margin-bottom: 3px;
+
 
 }
 .second-reason-describe {
@@ -459,8 +459,8 @@ position: absolute;
   font-weight: bold;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 124px;
-  padding-left: 125px;
+  padding-right: 139px;
+  padding-left: 139px;
   /* outline: 5px solid #fff000; */
   background-color: var(--basic-brown);
 }
@@ -480,12 +480,12 @@ position: absolute;
 
 
 .form-wrapper {
-  max-width: 583px;
+  max-width: 568px;
   margin: 0 auto;
   padding: 0 auto;
   min-height: 395px;
   background-color: var(--basic-white);
-
+outline: 5px solid #fff000;
   top: 0px;
   position: relative;
 }
@@ -503,20 +503,20 @@ position: absolute;
 }
 
 .first-row label {
-  padding-top: 57px;
-  padding-left: 55px;
-  text-align: center;
-  margin-right: 12px;
-  /* margin-right: 12px;
-  font-weight: bold;
-  margin-top: 37px;
-  margin-left: 55px;
-  padding-top: 5px;
-  padding-bottom: 0px; */
+  margin-top: 65px;
+  /* margin-left: 55px; */
+  /* text-align: center; */
+  margin-right: 15px;
+margin-left: 55px;
+padding-left: 2px;
+
+  /* margin-top: 37px; */
+
+  /* padding-top: 5px; */
   /* outline: 5px solid #fff000; */
-
-
-
+  font-weight: bold;
+/* margin-left: 55px; */
+ /* padding-left: 55px; */
 }
 .second-row {
   display: flex;
@@ -525,13 +525,13 @@ position: absolute;
   /* padding-top: 57px; */
   /* padding-right: 12px; */
 
-
+/* outline: 5px solid #fff000; */
   /* width: 458px; */
 }
 .second-row label {
   /* text-align: center;
   margin-right: 12px;
-  font-weight: bold;
+
   width: 100px;
   height: 46px;
   padding-top: 27px;
@@ -540,10 +540,10 @@ position: absolute;
   outline: 5px solid #fff000; */
   margin-top: 35px;
   margin-left: 55px;
-  text-align: center;
-  margin-right: 8px;
+  /* text-align: center; */
+  margin-right: 12px;
   /* outline: 5px solid #fff000; */
-
+font-weight: bold;
 }
 
 .third-row {
@@ -551,11 +551,11 @@ position: absolute;
   display: flex;
   justify-content: flex-start;
 /* flex-wrap: wrap; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding-top: 57px; */
   /* padding-right: 12px; */
 
-  margin-left: 55px;
+  /* margin-left: 55px; */
   /* width: 458px; */
 }
 .adults label{
@@ -632,14 +632,15 @@ float: left;
   background-color: var(--form-chill);
   /* max-width: 346px;
   height: 38px; */
-  margin-top: 52px;
+  margin-top: 57px;
   /* padding-right: 13px; */
   /* padding: 57px 55px; */
   width: 346px;
   height: 38px;
   border: none;
-  outline: 5px solid #fff000;
-  margin-right: 55px;
+  /* outline: 5px solid #fff000; */
+  /* margin-right: 55px; */
+  /* margin-left: 12px; */
 
 }
 .date-of-check-out input {
@@ -648,11 +649,11 @@ float: left;
   height: 38px; */
   margin-top: 27px;
   /* padding-right: 13px; */
-outline: 5px solid #fff000;
+/* outline: 5px solid #fff000; */
   width: 346px;
   height: 38px;
   border: none;
-  margin-right: 30px;
+  /* margin-right: 55px; */
 }
 /* .main-image::before {
   content: "";
@@ -666,7 +667,7 @@ outline: 5px solid #fff000;
 
 } */
 
-.date-of-check-out button::before {
+/* .date-of-check-out button::before {
  content: "";
  background-image: url("../img/calendar.svg");
    position: absolute;
@@ -674,22 +675,15 @@ outline: 5px solid #fff000;
      background-position: 0 0;
    width: 21px;
    height: 23px;
-   /* right: 0; */
-   right: 50px;
-bottom: 0px;
-}
-.date-of-check-in button::before {
- content: "";
- background-image: url("../img/calendar.svg");
-   position: absolute;
-   background-repeat: no-repeat;
-     background-position: 0 0;
-   width: 21px;
-   height: 23px;
-   /* right: 0; */
-   right: 50px;
+   right: 0;
+   right: 100px;
 top: 0px;
-}
+} */
+/* .date-of-check-in button::before {
+   right: 10px;
+bottom: 0px;
+background-color: var(--calendar-c)
+} */
 
 .date-of-check-out,
 .date-of-check-in,
@@ -705,10 +699,31 @@ top: 0px;
   margin-top: 57px;
 } */
 
-.date-of-check-in button,
-.date-of-check-out button {
+.date-of-check-in button{
+  position: absolute;
   border: 0;
+  top: 65px;
+  right: 8px;
 }
+.date-of-check-out button {
+  position: absolute;
+  top: 35px;
+  right: 6px;
+  outline: none;
+  border: 0;
+
+}
+.calendar {
+  width: 21px;
+  height: 23px;
+
+}
+
+.calendar svg {
+  fill: var(--calendar-chill);
+  outline: 5px solid #fff000;
+}
+
 .date-of-check-out input:hover,
 .date-of-check-in input:hover {
   background-color: var(--form-push);
@@ -719,7 +734,7 @@ top: 0px;
 }
 
 /*buttons*/
-.date-of-check-out::after,
+/* .date-of-check-out::after,
 .date-of-check-in::after {
   background-image: url("../img/calendar.svg");
   position: absolute;
@@ -731,25 +746,26 @@ top: 0px;
   margin-top: 7px;
   margin-right: 9px;
   margin-bottom: 8px;
+} */
+
+.calendar svg:hover,
+.calendar svg:focus {
+  fill: var(--basic-black);
 }
 
-.date-of-check-out button:hover,
-.date-of-check-out button:focus,
-.date-of-check-in button:focus,
-.date-of-check-in button:hover {
-  background-color: var(--basic-black);
-}
-
-.date-of-check-out button:active,
-.date-of-check-in button:active {
-  background-color: var(--basic-blue);
+.calendar svg:active {
+  fill: var(--basic-blue);
 }
 
 button[type="submit"] {
   background-color: var(--basic-blue);
    color: var(--basic-white);
    padding: 16px 182px;
-   margin-top: 54px;
+   /* margin-top: 54px;
+   margin-bottom: 53px; */
+   border: 0;
+   font-weight: bold;
+   font-size: 21px;
 }
 
 button[type="submit"]:hover,
@@ -797,11 +813,12 @@ position: relative;
   margin-top: 23px;
   /* width: 320px; */
   text-align: center;
-
+font-weight: bold;
   padding-top: 23px;
 }
 
 .telephone a {
+  margin-top: 9px;
   color: var(--basic-black);
 }
 
@@ -855,11 +872,12 @@ position: relative;
 
   max-width: 150px;
   margin: 8px;
+  outline: 5px solid #fff000;
 
 
 }
-.developer svg {
-  color: var(--basic-black);
+.developer path {
+  fill: var(--basic-black);
 }
 
 .developer:hover path,
