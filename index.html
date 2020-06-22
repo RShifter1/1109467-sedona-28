@@ -12,32 +12,33 @@
 
 <header class="main-header">
   <nav class="main-navigation">
-    <div class="main-nav-wrapper">
+    <!-- <div class="main-nav-wrapper"> -->
       <ul class="nav-list">
-        <li class="nav-item"><a href="index.html">Информация</a></li>
-        <li class="nav-item"><a href="gallery.html">Фото и видео</a></li>
-        <li class="nav-item"><a href="map.html">Карта штата</a></li>
-        <li class="nav-item"><a href="inner.html">Гостиницы</a></li>
+      <li class="nav-item"><a href="index.html">Информация</a></li>
+      <li class="nav-item"><a href="gallery.html">Фото и видео</a></li>
+      <li class="nav-item"> <a href="map.html">Карта штата</a></li>
+      <li class="nav-item"><a href="inner.html">Гостиницы</a></li>
       </ul>
       <a class="main-logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны"></a>
-    </div>
+    <!-- </div>s -->
   </nav>
 </header>
 
 <main class="container">
   <section class="main-image">
     <h1 class="visually-hidden">Баннер</h1>
+    <img src="img/intro-welcome.svg" width="457" height="351">
 </section>
 <section class="reasons">
 <div class="header-of-description">
-    <h1> Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h1> Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон! </p>
 </div>
       <div class="first-reason">
         <div class="first-reason-describe">
         <h3>Настоящий городок</h3>
         <p> -№1-</p>
-        <p> Седона - не атракцион для туристов, там течет своя жизнь!</p>
+        <p> Седона - не атракцион для туристов, там <br>течет своя жизнь!</p>
       </div>
         <img src="img/image1.jpg" width="800" height="256" alt="американский флаг развивается на ветру">
         </div>
@@ -53,7 +54,7 @@
             <div class="feature-food-image">
             </div>
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы  не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="feature-item">
             <div class="feature-souvenirs-image">
@@ -66,9 +67,9 @@
       <div class="second-reason">
         <img src="img/image2.jpg" width="800" height="256" alt="скалы Седоны">
         <div class="second-reason-describe">
-        <h3>Там есть мост дьявола!</h3>
+        <h3>Там есть <br> мост дьявола!</h3>
         <p>-№2-</p>
-        <p>Да, по нему можно пройтись, если осмелитесь!</p>
+        <p>Да, по нему можно пройтись, если конечно вы осмелитесь!</p>
       </div>
     </div>
       <div class="other-reasons">
@@ -76,46 +77,62 @@
           <li class="reason-item">
             <h3>Небольшая площадь</h3>
             <p>-№3-</p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p>Все достопримечательности<br> находятся очень близко</p>
           </li>
           <li class="reason-item">
             <h3>Красивая дорога</h3>
             <p>-№4-</p>
-            <p>Ехать в седону из лас вегаса совсем не скучно </p>
+            <p>Ехать в седону из лас вегаса совсем<br> не скучно </p>
           </li>
           <li class="reason-item">
             <h3>Мало туристов</h3>
             <p>-№5-</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
+            <p>Большинство едет в гранд каньон<br> и толпится там</p>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="search-of-hotels">
+      <div class="header-of-form-section">
     <h2> Заинтересовались?</h2>
-    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-
-      <div class="form">
-
+    <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+</div>
+        <div class="link-wrapper">
+          <div class="link">
       <a href="#">Поиск гостиницы в седоне</a>
+    </div>
+    </div>
+    <div class="map">
+    <!-- <div class="form-with-map"> -->
+    <div class="form-wrapper">
+      <div class="form-content">
       <form action="https://echo.htmlacademy.ru" method="get">
+        <div class="first-row">
         <label for="check-in">
           Дата заезда
           </label>
     <div class="date-of-check-in">
 
         <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
-      <button type="button" name="date-of-check-in"> </button>
+
+      <button type="button" name="date-of-check-in"> 
+        <!-- <img src="img/calendar.svg" class="calendar"> -->
+       </button>
     </div>
+  </div>
+  <div class="second-row">
     <label for="check-out">
       Дата выезда
     </label>
       <div class="date-of-check-out">
         <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
-      <button type="button" name="date-of-check-out"> </button>
+      <button type="button" name="date-of-check-out">
+        <!-- <img src="img/calendar.svg" class="calendar"> -->
+ </button>
     </div>
-
+    </div>
+<div class="third-row">
       <div class="adults">
         <label for="number-of-adults"> Взрослые</label>
           <div class="minus-and-plus">
@@ -140,14 +157,18 @@
               </button>
             </div>
           </div>
+        </div>
           <div class="button-wrapper">
       <button type="submit"> НАЙТИ </button>
     </div>
 
     </form>
-    <div class="map">
-    </div>
+
       </div>
+    </div>
+  </div>
+
+    <!-- </div> -->
     </section>
 
 </main>
