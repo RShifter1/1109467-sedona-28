@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+  }
+*::after {
+   box-sizing: border-box;
+   }
+*::before {
+  box-sizing: border-box;
+}
+
 :root {
 --basic-black: #000000;
 --basic-grey: #333333;
@@ -74,8 +84,7 @@ img {
 
 /* Main header */
 .main-header {
-  max-width: 1200px;
-  padding: 0 auto;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -179,7 +188,15 @@ img {
 
 }
 .main-image img {
-  padding: 77px 371px;
+  margin-top: 77px;
+  margin-left: 371px;
+  width: 457px;
+  height: 351px;
+  /* position: absolute;
+  z-index: 1;
+
+  left: 400px;
+top: 100px; */
 }
 /* .main-image::after {
   content: "";
@@ -480,140 +497,293 @@ position: absolute;
 
 
 .form-wrapper {
-  max-width: 568px;
+  width: 568px;
   margin: 0 auto;
   padding: 0 auto;
   min-height: 395px;
   background-color: var(--basic-white);
-outline: 5px solid #fff000;
+/* outline: 5px solid #fff000; */
   top: 0px;
   position: relative;
+  padding-top: 57px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 53px;
 }
 
 .first-row {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   /* margin: 0 auto; */
   /* padding-top: 57px; */
   /* padding-right: 12px; */
 /* outline: 5px solid #fff000; */
   /* width: 458px; */
   /* padding: 0 auto; */
-  padding: 0;
+  /* padding: 0; */
 }
 
 .first-row label {
-  margin-top: 65px;
-  /* margin-left: 55px; */
-  /* text-align: center; */
-  margin-right: 15px;
-margin-left: 55px;
-padding-left: 2px;
 
-  /* margin-top: 37px; */
-
-  /* padding-top: 5px; */
-  /* outline: 5px solid #fff000; */
   font-weight: bold;
-/* margin-left: 55px; */
- /* padding-left: 55px; */
+  margin-right: 15px;
+  padding-top: 7px;
 }
+.date-of-check-in {
+  background-color: var(--form-chill);
+  width: 346px;
+  height: 38px;
+  /* outline: 5px solid #fff000; */
+  display: flex;
+
+  padding: 6px 13px;
+  justify-content: space-between;
+}
+.date-of-check-in input {
+background-color: inherit;
+outline: none;
+  border: none;
+flex-grow: 1;
+font-weight: bold;
+font-size: 14px;
+color: var(--basic-black);
+
+}
+.date-of-check-in input::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+.date-of-check-in input::-moz-placeholder {
+  color: var(--basic-black);
+  }/* Firefox 19+ */
+.date-of-check-in input:-moz-placeholder {
+  color: var(--basic-black);
+  }/* Firefox 18- */
+.date-of-check-in input:-ms-input-placeholder {
+  color: var(--basic-black);
+}
+
+.date-of-check-in:hover {
+  background: var(--form-push);
+}
+
+.date-of-check-in:focus-within  {
+  background: var(--basic-white);
+  border: 2px solid #E5E5E5;
+box-sizing: border-box;
+}
+/* .date-of-check-in:hover,
+.date-of-check-in input:hover{
+  background-color: var(--form-push);
+}
+.date-of-check-in::focus {
+  background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
+box-sizing: border-box;
+} */
 .second-row {
   display: flex;
-  justify-content: flex-start;
-  /* margin: 0 auto; */
-  /* padding-top: 57px; */
-  /* padding-right: 12px; */
 
-/* outline: 5px solid #fff000; */
-  /* width: 458px; */
 }
 .second-row label {
-  /* text-align: center;
+  margin-top: 27px;
   margin-right: 12px;
+  padding-top: 7px;
+  font-weight: bold;
+}
 
-  width: 100px;
-  height: 46px;
-  padding-top: 27px;
-  padding-left: 55px;
-  padding-top: 5px;
-  outline: 5px solid #fff000; */
-  margin-top: 35px;
-  margin-left: 55px;
-  /* text-align: center; */
-  margin-right: 12px;
-  /* outline: 5px solid #fff000; */
-font-weight: bold;
+.date-of-check-out{
+  background-color: var(--form-chill);
+  width: 346px;
+  height: 38px;
+  display: flex;
+
+  padding: 6px 13px;
+  margin-top: 29px;
+  justify-content: space-between;
+}
+.date-of-check-out input {
+  /* background-color: var(--form-chill); */
+  background-color: inherit;
+  outline: none;
+    border: none;
+    flex-grow: 1;
+    font-weight: bold;
+
+}
+.date-of-check-out input::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+.date-of-check-out input::-moz-placeholder {
+  color: var(--basic-black);
+  }/* Firefox 19+ */
+.date-of-check-out input:-moz-placeholder {
+  color: var(--basic-black);
+  }/* Firefox 18- */
+.date-of-check-out input:-ms-input-placeholder {
+  color: var(--basic-black);
+}
+
+.date-of-check-out:hover {
+  background: var(--form-push);
+}
+.date-of-check-out:focus-within  {
+  background: var(--basic-white);
+  border: 2px solid #E5E5E5;
+box-sizing: border-box;
 }
 
 .third-row {
 
   display: flex;
-  justify-content: flex-start;
-/* flex-wrap: wrap; */
-  /* margin: 0 auto; */
-  /* padding-top: 57px; */
-  /* padding-right: 12px; */
+justify-content: space-between;
+  margin-top: 40px;
+}
 
-  /* margin-left: 55px; */
-  /* width: 458px; */
+.adults {
+  display: flex;
+  flex-basis: 50%;
+  margin-right:  58px;
+  /* outline: 5px solid #fff000; */
+
 }
 .adults label{
   margin-right: 11px;
-float: left;
-  /* width: 100px; */
-  /* height: 46px; */
-  margin-top: 27px;
-  margin-left: 55px;
-  padding-top: 10px;
+  padding-top: 7px;
+  /* width: 101px; */
+/* outline: 5px solid #fff000; */
+padding-right: 22px;
+font-weight: bold;
 }
 
 .minus-and-plus {
   background-color: var(--form-chill);
+/* outline: 5px solid #fff000; */
   display: flex;
-  /* outline: 5px solid #fff000; */
-  /* width: 114px; */
-  /* height: 38px; */
-  margin-top: 30px;
-  margin-right: 55px;
+  justify-content: space-around;
+  /* align-items: center; */
+  width: 114px;
+  height: 38px;
+    /* padding-left: 13px; */
+  /* margin-left: 13px; */
+  /* margin-right: 13px; */
+  /* padding-right: 13px; */
+  align-items: center;
+  padding-left: 13px;
+  padding-right: 13px;
+  /* margin-right: 53px; */
 }
 
-.kids label {
-  float: left;
-  margin-left: 53px;
+.minus-and-plus input {
+background-color: var(--form-chill);
+  outline: none;
+  border: none;
 
-}
-
-/* .date-of-check-in {
-  max-width: 348px;
-} */
-/* .form-wrapper {
-  width: 568px;
-  height: 86px;
-  background-color: var(--basic-brown);
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0 auto;
-
-} */
-
-
-
-/* .search-of-hotels h2 {
-  font-size: 30px;
-  line-height: 25px;
-}
-.form-wrapper legend {
+  width: 64px;
+  height: 38px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
   text-align: center;
-}
-.form-wrapper a {
-  color: var(--basic-white); */
 
-/* .link {
-  background-color: var(--basic-brown);
-  width: 568px;
-  height: 86px;
+
+}
+.minus-and-plus button {
+  border: none;
+  width: 11px;
+height: 3px;
+/* padding-right: 13px; */
+background-color: var(--calendar-chill);
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+/* outline: none; */
+/* margin-right: 50px; */
+/* outline: 5px solid #fff000; */
+}
+
+.minus-wrapper {
+  /* width: 410px; */
+  height: 38px;
+  outline: none;
+  border: none;
+  padding-left: 14px;
+  padding-right: 13px;
+  /* display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+}
+
+/* .plus {
+  border: none;
+  width: 3px;
+height: 11px;
+
+background-color: var(--calendar-chill);
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+top: 13px;
+
 } */
+.minus-and-plus button:hover,
+.minus-and-plus button:focus {
+  background-color: var(--basic-black);
+}
+
+.minus-and-plus button:active {
+  background-color: var(--basic-blue);
+}
+
+
+.kids {
+  display: flex;
+  flex-basis: 50%;
+}
+.kids label {
+  margin-right: 21px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  padding-top: 7px;
+  margin-left:
+}
+.plus-wrapper {
+  /* width: 410px; */
+  height: 38px;
+  outline: none;
+  border: none;
+  padding-left: 14px;
+  padding-right: 13px;
+
+position: relative;
+
+}
+
+.plus-wrapper::before {
+  content: "";
+  width: 3px;
+  height: 11px;
+  position: absolute;
+  background-color: var(--calendar-chill);
+  top: 14px;
+  left: 12px;
+}
+
+.plus-wrapper:hover::before,
+.plus-wrapper:focus::before {
+  background-color: var(--basic-black);
+}
+.plus-wrapper:active::before{
+  background-color: var(--basic-blue);
+}
 
 .link a:hover,
 .link a:focus {
@@ -628,62 +798,9 @@ float: left;
 }
 /*inputs*/
 
-.date-of-check-in input {
-  background-color: var(--form-chill);
-  /* max-width: 346px;
-  height: 38px; */
-  margin-top: 57px;
-  /* padding-right: 13px; */
-  /* padding: 57px 55px; */
-  width: 346px;
-  height: 38px;
-  border: none;
-  /* outline: 5px solid #fff000; */
-  /* margin-right: 55px; */
-  /* margin-left: 12px; */
 
-}
-.date-of-check-out input {
-  background-color: var(--form-chill);
-  /* max-width: 346px;
-  height: 38px; */
-  margin-top: 27px;
-  /* padding-right: 13px; */
-/* outline: 5px solid #fff000; */
-  width: 346px;
-  height: 38px;
-  border: none;
-  /* margin-right: 55px; */
-}
-/* .main-image::before {
-  content: "";
-  background-image: url("../img/intro-mask.svg");
-  position: absolute;
-  bottom: 0;
-  left: 0;
-   width: 100%;
-   height: 57px;
-   background-repeat: no-repeat;
 
-} */
 
-/* .date-of-check-out button::before {
- content: "";
- background-image: url("../img/calendar.svg");
-   position: absolute;
-   background-repeat: no-repeat;
-     background-position: 0 0;
-   width: 21px;
-   height: 23px;
-   right: 0;
-   right: 100px;
-top: 0px;
-} */
-/* .date-of-check-in button::before {
-   right: 10px;
-bottom: 0px;
-background-color: var(--calendar-c)
-} */
 
 .date-of-check-out,
 .date-of-check-in,
@@ -692,80 +809,65 @@ background-color: var(--calendar-c)
   position: relative;
 }
 
-/* .date-of-check-in {
-  background-color: var(--form-chill);
-  max-width: 346px;
-  height: 38px;
-  margin-top: 57px;
-} */
 
 .date-of-check-in button{
-  position: absolute;
-  border: 0;
-  top: 65px;
-  right: 8px;
-}
-.date-of-check-out button {
-  position: absolute;
-  top: 35px;
-  right: 6px;
-  outline: none;
+
   border: 0;
 
-}
-.calendar {
   width: 21px;
   height: 23px;
+  background: none;
+  margin-left: 0;
+  padding: 0;
+}
+.date-of-check-out button {
+
+  border: 0;
+
+  width: 21px;
+  height: 23px;
+  background: none;
+  margin-left: 0;
+  padding: 0;
 
 }
 
-.calendar svg {
+
+button svg {
   fill: var(--calendar-chill);
-  outline: 5px solid #fff000;
 }
 
-.date-of-check-out input:hover,
-.date-of-check-in input:hover {
-  background-color: var(--form-push);
-}
-.date-of-check-out input:focus,
-.date-of-check-in input:focus {
-  background-color: var(--basic-white);
-}
+
 
 /*buttons*/
-/* .date-of-check-out::after,
-.date-of-check-in::after {
-  background-image: url("../img/calendar.svg");
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-color: var(--calendar-chill);
-  width: 25px;
-  height: 23px;
-  margin-top: 7px;
-  margin-right: 9px;
-  margin-bottom: 8px;
-} */
 
-.calendar svg:hover,
-.calendar svg:focus {
+
+button svg:hover,
+button svg:focus {
   fill: var(--basic-black);
 }
 
-.calendar svg:active {
+button svg:active {
   fill: var(--basic-blue);
 }
 
 button[type="submit"] {
   background-color: var(--basic-blue);
    color: var(--basic-white);
-   padding: 16px 182px;
-   /* margin-top: 54px;
-   margin-bottom: 53px; */
+
+   padding-right: 204px;
+   /* margin-left: 55px; */
+   margin-right: 55px;
+   padding-left: 182px;
+   padding-top: 16px;
+   padding-bottom: 16px;
+
    border: 0;
+   outline: none;
    font-weight: bold;
    font-size: 21px;
+   margin-top: 54px;
+   /* outline: 5px solid #fff000; */
 }
 
 button[type="submit"]:hover,
