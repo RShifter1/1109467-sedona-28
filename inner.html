@@ -17,9 +17,9 @@
           <li class="nav-item"><a href="index.html">Информация</a></li>
           <li class="nav-item"><a href="gallery.html">Фото и видео</a></li>
           <li class="nav-item"> <a href="map.html">Карта штата</a></li>
-          <li class="nav-item"><a href="inner.html">Гостиницы</a></li>
+          <li class="nav-item current"><a href="inner.html">Гостиницы</a></li>
           </ul>
-          <a class="main-logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны"></a>
+          <a href="index.html" class="main-logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны"></a>
         <!-- </div>s -->
       </nav>
     </header>
@@ -38,7 +38,7 @@
       <ul>
         <li class="filter-option filter-checkbox">
           <label for="filter-pool">
-          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked >
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked disabled >
           <div class="checkbox-square">
           </div>
           Бассейн
@@ -46,7 +46,7 @@
         </li>
         <li class="filter-option filter-checkbox">
           <label for="filter-parking">
-          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking" disabled>
           <div class="checkbox-square">
           </div>
         Парковка
@@ -122,7 +122,7 @@
         <p class="founded">Найдено:3</p>
           <h3>Сортировка:</h3>
           <!-- <div class="sorting-wrapper"> -->
-          <a href="#">По цене</a>
+          <a class="current" href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По рейтингу</a>
         </div>
@@ -130,7 +130,7 @@
           <button type="button" name="up-dir">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
         </button>
-        <button type="button" name="down-dir">
+        <button class="current" type="button" name="down-dir">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
         </button>
           </div>
@@ -146,7 +146,7 @@
     <div class="amara photo-of-the-hotel">
     </div>
 <div class="full-info card1">
-          <h3 class="name-of-the-hotel"> AMARA RESORT & SPA </h3>
+        <a>  <h3 class="name-of-the-hotel"> AMARA RESORT & SPA </h3></a>
           <div class="hotel-info">
             <p>Гостиница</p>
             <p>от 4000 Р.</p>
@@ -180,7 +180,7 @@
      <div class="desert">
      </div>
      <div class="full-info card2">
-      <h3 class="name-of-the-hotel"> DESERT QUAIL INN</h3>
+    <a>  <h3 class="name-of-the-hotel"> DESERT QUAIL INN</h3></a>
       <div class="hotel-info card2">
       <p> Мотель</p>
       <p> от 3000 Р.</p>
@@ -210,7 +210,7 @@
         <div class="villas">
         </div>
         <div class="full-info card3">
-          <h3 class="name-of-the-hotel">VILLAS AT POCO DIABLO<h3>
+          <a><h3 class="name-of-the-hotel">VILLAS AT POCO DIABLO<h3></a>
           <div class="hotel-info">
         <p>Апартаменты</p>
         <p> от 2000 Р.</p>
