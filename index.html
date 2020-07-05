@@ -101,20 +101,24 @@
 </div>
         <div class="link-wrapper">
           <div class="link">
-      <a href="#">Поиск гостиницы в седоне</a>
+      <a class="link1 login-link" href="#">Поиск гостиницы в седоне</a>
     </div>
     </div>
+
     <div class="form-block">
+    <a class="map-image" href="#">  <img src="img/map.svg" width="1200" height="473"></a>
+
 
     <!-- <div class="form-with-map"> -->
-    <div class="form-wrapper">
+    <div class="form-wrapper modal-login">
       <div class="form-content">
-      <form action="https://echo.htmlacademy.ru" method="get">
+
+      <form class="searchForm" action="https://echo.htmlacademy.ru" method="get">
         <div class="first-row">
         <label for="check-in">Дата заезда:</label>
     <div class="date-of-check-in">
 
-        <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
+        <input  class="check-in-date" type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017" required>
 
       <button type="button" name="date-of-check-in">
           <!-- <div class="calendar"> -->
@@ -127,7 +131,7 @@
   <div class="second-row">
     <label for="check-out">Дата выезда:</label>
       <div class="date-of-check-out">
-        <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
+        <input class="check-out-date" type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017" required>
 
       <button type="button" name="date-of-check-out">
         <!-- <div class="calendar"> -->
@@ -228,5 +232,80 @@
   </div>
 </footer>
 </div>
+
+<script>
+var formLink = document.querySelector(".link1");
+var loginPopup = document.querySelector(".form-wrapper");
+  var loginClose = loginPopup.querySelector(".modal-close");
+  var loginLogin = loginPopup.querySelector(".check-in-date");
+  var loginForm = loginPopup.querySelector(".searchForm");
+  var loginPassword = loginPopup.querySelector(".check-out-date");
+
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  formLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    loginPopup.classList.add("modal-show");
+
+    if (storage) {
+      loginLogin.value = storage;
+      loginPassword.focus();
+    } else {
+      loginLogin.focus();
+    }
+  });
+
+  loginClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  loginPopup.classList.remove("modal-show");
+  loginPopup.classList.remove("modal-error");
+});
+
+  searchForm.addEventListener("submit", function (evt) {
+    if (!loginLogin.value || !loginPassword.value) {
+    evt.preventDefault();
+    loginPopup.classList.remove("modal-error");
+   loginPopup.offsetWidth = loginPopup.offsetWidth;
+   loginPopup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("login", loginLogin.value);
+    }
+  }
+});
+
+var mapLink = document.querySelector(".map-image");
+
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
+
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (loginPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      loginPopup.classList.remove("modal-show");
+      loginPopup.classList.remove("modal-error");
+    }
+  }
+});
+</script>
+
   </body>
 </html>
