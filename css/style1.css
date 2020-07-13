@@ -92,6 +92,7 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  /* height: 100%; */
 }
 
 /* Main header */
@@ -196,25 +197,9 @@ img {
   width: 457px;
   height: 351px;
   position: relative;
-  /* position: absolute;
-  z-index: 1;
 
-  left: 400px;
-top: 100px; */
 }
-/* .main-image::after {
-  content: "";
-  background-image: url("../img/intro-welcome.svg");
-  position: absolute;
-  left: 371px;
-  margin-top: 71px;
-  margin-bottom: 71px;
-  right: 371px;
-  width: 457px;
-  height: 351px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-} */
+
 .main-image::before {
   content: "";
   background-image: url("../img/mask1.svg");
@@ -436,9 +421,8 @@ line-height: 24px;
 
 
 
-.link a {
+/* .link1 button {
   color: var(--basic-white);
-  /* max-width: 568px; */
   font-size: 21px;
   font-weight: bold;
   padding-top: 30px;
@@ -446,25 +430,41 @@ line-height: 24px;
   padding-right: 145px;
   padding-left: 145px;
   background-color: var(--basic-brown);
-}
+  outline: 5px solid red;
+} */
 
-.link-wrapper {
+.form-wrapper {
   position: relative;
   width: 568px;
   margin: 0 auto;
 
 }
 
-.login-link {
-  color: var(--basic-white);
+
+
+.link1 {
+font-style: normal;
   display: inline-block;
-  font-size: 21px;
   font-weight: bold;
-  padding-top: 32px;
-  padding-bottom: 29px;
-  width: 100%;
-  background-color: var(--basic-brown);
-  vertical-align: 30px;
+background-color: var(--basic-brown);
+  /* width: 100%; */
+color: var(--basic-white);
+  /* vertical-align: 30px; */
+
+  text-transform: uppercase;
+  font-size: 21px;
+line-height: 26px;
+border: none;
+/*
+ */
+/*  */
+/* width: 568px;
+height: 86px; */
+text-align: center;
+padding-right: 128px;
+padding-left: 128px;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .searchForm {
@@ -476,7 +476,7 @@ line-height: 24px;
   padding-left: 55px;
   padding-right: 55px;
   padding-bottom: 53px;
-  top: 85px;
+  top: 100px;
   transform: translateX(-50%);
   left: 50%;
   z-index: 1;
@@ -611,7 +611,6 @@ line-height: 24px;
   display: flex;
   flex-basis: 50%;
   margin-right: 58px;
-  /* outline: 5px solid #fff000; */
 }
 .adults label {
   margin-right: 18px;
@@ -638,6 +637,7 @@ line-height: 24px;
   font-weight: bold;
   text-align: center;
   padding-bottom: 5px;
+  width: 36px;
 }
 
 .minus-and-plus button {
@@ -738,7 +738,7 @@ background: url("../img/unionActive.svg") 50% no-repeat;
   fill: var(--basic-black);
 } */
 .plus-wrapper::before {
-  outline: 5px solid red;
+
   content: "";
   width: 3px;
   height: 11px;
@@ -758,15 +758,19 @@ background: url("../img/unionActive.svg") 50% no-repeat;
   background-color: var(--basic-blue);
 }
 
-.link a:hover,
-.link a:focus {
+
+.link1:hover,
+.link1:focus {
   background-color: var(--basic-brown-hover);
   color: var(--basic-white);
+  outline: none;
 }
 
-.link a:active {
+.link1:active {
   background-color: var(--push-brown);
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: none;
 }
 /*inputs*/
 
@@ -799,15 +803,15 @@ background: url("../img/unionActive.svg") 50% no-repeat;
 }
 
 button svg {
-  /* outline: 5px solid red; */
+  outline: 5px solid red;
   fill: var(--calendar-chill);
   margin-top: 5px;
 }
 
 /*buttons*/
 
-button svg:hover,
-button svg:focus {
+.date-of-check-in button:hover,
+.date-of-check-in button:focus {
   fill: var(--basic-black);
 }
 
@@ -930,7 +934,7 @@ z-index: 0;
   display: flex;
   justify-content: space-between;
   /* outline: 5px solid red; */
-
+  padding-bottom: 36px;
 }
 
 .page-footer {
@@ -1077,7 +1081,6 @@ width: 100%;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  /* outline: 5px solid red; */
 }
 
 .price-range {
@@ -1094,19 +1097,31 @@ width: 100%;
   align-items: center;
   /* justify-content: space-around; */
 
-
-
+  outline: 5px solid red;
+  /* padding-left: 67px; */
   padding-bottom: 5px;
 
 }
 .start-price{
-  margin-left: 65px;
+  display: flex;
+  flex-grow: 1;
+  outline: 5px solid red;
+/* padding-right: 0; */
+  margin-left: 67px;
 }
-
+.start-price input {
+  display: flex;
+  flex-grow: 1;
+  padding: 0;
+}
 .finish-price {
-  padding-left: 120px;
+  display: flex;
+  /* padding-right: 1080px; */
+  outline: 5px solid red;
+
+  /* padding-left: -80px; */
 }
-.price-range p:first-child::before {
+.price-range label:first-child::before {
   content: "";
   width: 2px;
   height: 22px;
@@ -1115,10 +1130,14 @@ width: 100%;
   left: 157.5px;
   bottom: 5px;
 }
-/* .price-range input {
+.price-range input {
+  color: var(--basic-white);
+  display: flex;
+  background-color: transparent;
   border-radius: 2px solid transparent;
   box-sizing: border-box transparent;
   border: transparent;
+  padding: 0;
 }
 .price-range input:hover,
 .price-range input:focus {
@@ -1127,7 +1146,7 @@ width: 100%;
   border: none;
   outline: none;
   border-radius: 2px;
-} */
+}
 
 .range-controls {
   position: relative;
@@ -1248,35 +1267,28 @@ width: 100%;
   content: "";
   position: absolute;
   display: none;
+
 }
 
-.filter-option label input:checked ~ .checkbox-square:after {
+.filter-input-checkbox:checked ~ .checkbox-square:after {
   display: block;
 }
-.filter-option label input:checked ~ .checkbox-square {
+.filter-input-checkbox:checked ~ .checkbox-square {
   background-image: url("../img/shapeChecked.svg");
 }
-.filter-option label .checkbox-square:after {
+.filter-input-checkbox .checkbox-square:after {
   background-image: url("../img/checkbox-on.svg");
   width: 25px;
   height: 21px;
-  /* outline: 5px solid red; */
+
 }
+
 .checkbox-square:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.filter-option label input:disabled ~ .checkbox-square:after {
-  display: block;
-}
-.filter-option label .checkbox-square:disabled:after {
-  background-image: url("../img/checkbox-ondisabled.svg");
-  width: 25px;
-  height: 21px;
-  /* outline: 5px solid red; */
-}
 
 .checkbox-square {
   background-image: url("../img/checkbox-off.svg");
@@ -1287,13 +1299,21 @@ width: 100%;
   margin-right: 18px;
 }
 
-.checkbox-square:disabled {
-  background-image: url("../img/checkbox-offdisabled.svg");
-  display: flex;
-  width: 23px;
-  height: 23px;
-  position: relative;
-  margin-right: 16px;
+
+
+.filter-input-checkbox:disabled ~ .filter-label {
+  color: #6A6A6A;
+}
+.filter-input-checkbox:disabled ~ .filter-label .checkbox-square {
+  background: #6A6A6A;
+}
+
+
+.filter-input-checkbox:not(:disabled) ~ .filter-label:hover .checkbox-square {
+  background-color: black;
+}
+.filter-input-checkbox: not(:disabled) ~ .filter-label:hover {
+  background-color: black;
 }
 
 .founded {
@@ -1363,11 +1383,10 @@ line-height: 26px;
   border: none;
 }
 .buttons-of-dir {
-  outline: 5px solid #fff000;
   margin-top: 4px;
   /* margin-left: 4px; */
 }
-.buttons-of-dir button {
+.buttons-of-dir a {
   border: none;
   outline: none;
   background-color: inherit;
@@ -1496,7 +1515,6 @@ margin-left: 1px;
   justify-content: space-between;
   /* align-self: flex-end; */
   /* padding-top: 0; */
-  outline: 5px solid red;
 }
 
 .stars {
