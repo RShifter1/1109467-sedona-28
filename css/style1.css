@@ -25,6 +25,10 @@
   --basic-grey: #bdbbbc;
   --icons-of-dir-chill: #cacaca;
   --disabled: #6a6a6a;
+  --date-of-check-in-focus: #e5e5e5;
+  --background-toggle: #ababab;
+  --box-shadow-toggle: #cfcfcf;
+  --rate-wrapper: #666666;
 }
 
 .page {
@@ -40,10 +44,10 @@ body {
   /* width: 1220px; */
   margin: 0 auto;
   /* padding-left: 0px; */
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400px;
+  font-weight: normal;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: top center;
@@ -160,6 +164,7 @@ img {
   height: 509px;
   background-repeat: no-repeat;
   position: relative;
+  background-color: var(--basic-brown);
 }
 .main-image img {
   margin-top: 77px;
@@ -167,6 +172,7 @@ img {
   width: 457px;
   height: 351px;
   position: relative;
+
 
 }
 
@@ -217,7 +223,7 @@ img {
   background: var(--basic-blue);
   text-align: center;
   color: var(--basic-white);
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 0px;
 }
 
@@ -225,14 +231,15 @@ img {
 
   font-size: 21px;
 
+
   padding-left: 139px;
   padding-right: 139px;
-  padding-bottom: 3px;
   line-height: 21px;
+  margin-bottom: 27px;
 }
 
 .first-reason-describe p {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   line-height: 21px;
   align-items: center;
   padding-left: 0px;
@@ -311,24 +318,26 @@ img {
   background: var(--basic-blue);
   text-align: center;
   color: var(--basic-white);
-
+  padding-left: 5px;
 }
 
 .second-reason-describe p {
 
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
 
   line-height: 21px;
   align-items: center;
-  padding-left: 0px;
+  /* padding-left: 0px; */
 
 
 }
 .second-reason-describe h3 {
   text-align: center;
-
+  margin-bottom: 28px;
   font-size: 21px;
+line-height: 21px;
+
 
 }
 
@@ -399,6 +408,7 @@ border: none;
 text-align: center;
 width: 568px;
 height: 88px;
+vertical-align: 0;
 }
 
 .searchForm {
@@ -452,10 +462,12 @@ height: 88px;
   flex-grow: 1;
   font-weight: bold;
   font-size: 14px;
+  line-height: 26px;
   color: var(--basic-black);
   text-transform: uppercase;
-
+  font-family: inherit;
   box-sizing: border-box;
+  padding-left: -50px;
 }
 .date-of-check-in input::-webkit-input-placeholder {
   color: var(--basic-black);
@@ -476,7 +488,7 @@ height: 88px;
 
 .date-of-check-in:focus-within {
   background: var(--basic-white);
-  border: 2px solid #e5e5e5;
+  border: 2px solid var(--date-of-check-in-focus);
   box-sizing: border-box;
 }
 
@@ -510,6 +522,9 @@ height: 88px;
   flex-grow: 1;
   font-weight: bold;
   text-transform: uppercase;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 26px;
 }
 .date-of-check-out input::-webkit-input-placeholder {
   color: var(--basic-black);
@@ -529,7 +544,7 @@ height: 88px;
 }
 .date-of-check-out:focus-within {
   background: var(--basic-white);
-  border: 2px solid #e5e5e5;
+  border: 2px solid var(--date-of-check-in-focus);
   box-sizing: border-box;
 }
 
@@ -570,6 +585,7 @@ height: 88px;
   text-align: center;
   padding-bottom: 5px;
   width: 36px;
+  font-family: inherit;
 }
 
 .minus-and-plus button {
@@ -606,19 +622,19 @@ height: 88px;
 }
 .minus button:hover,
 .minus button:focus {
-background: url("../img/minusHover.svg") 50% no-repeat;
+background: url("../img/minushover.svg") 50% no-repeat;
 }
 
 .minus button:active {
-  background: url("../img/minusActive.svg") 50% no-repeat;
+  background: url("../img/minusactive.svg") 50% no-repeat;
 }
 
 .plus button:hover,
 .plus button:focus {
-  background: url("../img/unionHover.svg") 50% no-repeat;
+  background: url("../img/unionhover.svg") 50% no-repeat;
 }
 .plus button:active {
-background: url("../img/unionActive.svg") 50% no-repeat;
+background: url("../img/unionactive.svg") 50% no-repeat;
 }
 .minus-wrapper {
   height: 38px;
@@ -920,14 +936,12 @@ width: 100%;
 
   padding-left: 71px;
   padding-right: 73px;
+padding-bottom: 13px;
 
   background-repeat: no-repeat;
 }
 
-.filter-section {
 
-  outline: 5px solid red;
-}
 
 .filter-content form {
   display: grid;
@@ -962,7 +976,7 @@ width: 100%;
 
   display: flex;
 
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
   width: 317px;
@@ -993,6 +1007,7 @@ justify-content: space-between;
   margin-left: 3px;
   font-size: 14px;
 line-height: 21px;
+font-family: inherit;
 }
 .finish-price {
   width: 150px;
@@ -1061,17 +1076,17 @@ height: 21px;
   width: 19px;
   height: 19px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--background-toggle);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(box-shadow-toggle);
   cursor: pointer;
 }
 
 .range-controls .toggle:hover,
 .range-controls .toggle:focus {
   top: 8px;
-  border: 9px solid #ffffff;
+  border: 9px solid var(--basic-white);
   width: 24px;
   height: 24px;
 }
@@ -1090,8 +1105,8 @@ height: 21px;
   color: var(--basic-white);
 }
 .filter-content button {
-  padding: 7px 28px 10px 36px;
-  border: 2px solid #ffffff;
+  padding: 7px 35px 7px 36px;
+  border: 2px solid var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
   margin-left: 85px;
@@ -1102,6 +1117,12 @@ height: 21px;
   cursor: pointer;
   outline: none;
   text-align: center;
+
+
+}
+
+.form-button-wrapper button {
+font-family: inherit;
 }
 
 .filter-content button:hover,
@@ -1112,7 +1133,7 @@ height: 21px;
 .filter-content button:active {
   outline: none;
   border-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
 }
 
 
@@ -1156,7 +1177,7 @@ height: 21px;
   display: block;
 }
 .filter-input-checkbox:checked ~  .filter-label .checkbox-square {
-  background-image: url("../img/shapeChecked.svg");
+  background-image: url("../img/shapechecked.svg");
 }
 .filter-option label .checkbox-square:after {
   background-image: url("../img/checkbox-on.svg");
@@ -1204,9 +1225,9 @@ height: 21px;
 }
 
 .founded {
-  font-weight: 700px;
+  font-weight: bold;
   font-size: 21px;
-  margin-bottom:
+  /* margin-bottom: */
 }
 
 .sorting-section {
@@ -1215,17 +1236,18 @@ height: 21px;
 
   padding-left: 73px;
 line-height: 26px;
-
+padding-bottom: 10px;
   padding-right: 73px;
-  padding-top: 14px;
-  padding-bottom: 5px;
+  /*
+   ; */
+   /* padding-top: 14px; */
 }
 
 .sorting {
-  outline: 5px solid red;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+
 }
 
 .sorting p {
@@ -1244,7 +1266,6 @@ line-height: 26px;
 }
 
 .sorting a {
-  outline: 5px solid red;
   color: var(--basic-grey);
   border-bottom: 1px dashed var(--basic-blue);
   height: 18px;
@@ -1294,10 +1315,10 @@ line-height: 26px;
   padding-top: 24px;
   padding-bottom: 30px;
   justify-content: space-between;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--date-of-check-in-focus);
 }
 .first-card {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--date-of-check-in-focus);
 }
 .left-angle {
   display: flex;
@@ -1323,7 +1344,7 @@ line-height: 26px;
   margin-top: 6px;
 }
 .full-info {
-  margin-left: 29px;
+  margin-left: 31px;
 }
 .name-of-the-hotel {
   display: flex;
@@ -1360,6 +1381,11 @@ margin-bottom: 15px;
 
   margin-right: 20px;
 
+}
+
+.card3 h3 {
+  font-size: 21px;
+line-height: 26px;
 }
 
 .buttons {
@@ -1403,7 +1429,7 @@ margin-bottom: 15px;
 margin-top: 47px;
 
   background-color: var(--form-chill);
-  color: #666666;
+  color: var(--rate-wrapper);
   text-transform: uppercase;
 margin-bottom: 0;
 }
