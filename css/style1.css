@@ -617,24 +617,24 @@ vertical-align: 0;
   outline: none;
   flex-shrink: 0;
   padding: 0;
-  background: url("../img/union.svg") 50% no-repeat;
+  background: url("../img/union1.svg") 50% no-repeat;
   margin-right: 0px;
 }
 .minus button:hover,
 .minus button:focus {
-background: url("../img/minushover.svg") 50% no-repeat;
+background: url("../img/minushover1.svg") 50% no-repeat;
 }
 
 .minus button:active {
-  background: url("../img/minusactive.svg") 50% no-repeat;
+  background: url("../img/minusactive1.svg") 50% no-repeat;
 }
 
 .plus button:hover,
 .plus button:focus {
-  background: url("../img/unionhover.svg") 50% no-repeat;
+  background: url("../img/unionhover1.svg") 50% no-repeat;
 }
 .plus button:active {
-background: url("../img/unionactive.svg") 50% no-repeat;
+background: url("../img/unionactive1.svg") 50% no-repeat;
 }
 .minus-wrapper {
   height: 38px;
@@ -1177,7 +1177,7 @@ font-family: inherit;
   display: block;
 }
 .filter-input-checkbox:checked ~  .filter-label .checkbox-square {
-  background-image: url("../img/shapechecked.svg");
+  background-image: url("../img/shapechecked1.svg");
 }
 .filter-option label .checkbox-square:after {
   background-image: url("../img/checkbox-on.svg");
